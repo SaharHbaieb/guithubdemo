@@ -8,8 +8,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require("@angular/core");
-var boutique_service_1 = require("../services/boutique/boutique.service");
+var core_1 = require('@angular/core');
+var boutique_service_1 = require('../services/boutique/boutique.service');
 var BoutiqueComponent = (function () {
     function BoutiqueComponent(boutiqueService) {
         var _this = this;
@@ -44,16 +44,16 @@ var BoutiqueComponent = (function () {
             console.log('Success deleting ' + data);
         });
     };
+    BoutiqueComponent = __decorate([
+        core_1.Component({
+            selector: 'boutique',
+            moduleId: module.id,
+            templateUrl: 'boutique.html',
+            providers: [boutique_service_1.BoutiqueService]
+        }), 
+        __metadata('design:paramtypes', [boutique_service_1.BoutiqueService])
+    ], BoutiqueComponent);
     return BoutiqueComponent;
 }());
-BoutiqueComponent = __decorate([
-    core_1.Component({
-        selector: 'boutique',
-        moduleId: module.id,
-        templateUrl: 'boutique.html',
-        providers: [boutique_service_1.BoutiqueService]
-    }),
-    __metadata("design:paramtypes", [boutique_service_1.BoutiqueService])
-], BoutiqueComponent);
 exports.BoutiqueComponent = BoutiqueComponent;
 //# sourceMappingURL=boutique.component.js.map
