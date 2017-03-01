@@ -1,0 +1,20 @@
+﻿<div class="container">
+    <hr>
+    <h3>Entrer nom du boutique</h3>
+    <input type="text" name="name" [(ngModel)]="name" />
+    <h3>Enter le propriétaire </h3>
+    <input type="text" name="proprietaire" [(ngModel)]="proprietaire" />
+    <br><br>
+    <button (click)="addBoutique()">Add a boutique</button>
+</div>
+<div class="boutiques">
+    <li *ngFor="let human ofboutiques ">
+        {{human.name}} {{human.proprietaire}}
+        <button (click)="removeBoutique(boutique._id)">Deletea boutique </button>
+        <button (click)="viewBoutique(boutique._id)">View  a boutique</button>
+    </li>
+</div>
+<div class="specific">
+    {{specificBoutiqueProprietaire}}
+    {{specificBoutiqueName}}
+</div>
